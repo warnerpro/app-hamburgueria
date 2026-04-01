@@ -1,0 +1,9 @@
+base: .
+packages:
+  - location: backend
+  - location: frontend
+npmClient: npm
+useWorkspaces: true
+version: lerna-semver
+publishConfig:
+  registry: https://registry.npmjs.org

@@ -1,0 +1,12 @@
+{
+  "name": "hamburgueria",
+  "version": "1.0.0",
+  "buildCommand": "npm install",
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: hamburgueria_db
+    environment:
+      POSTGRES_USER: ${DB_USER:-user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
+      POSTGRES_DB: ${DB_NAME:-hamburgueria}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - hamburgueria-network
+
+  adminer:
+    image: adminer
+    container_name: hamburgueria_adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - hamburgueria-network
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+
+networks:
+  hamburgueria-network:
+    driver: bridge

@@ -1,0 +1,24 @@
+{
+  "name": "hamburgueria-app",
+  "version": "1.0.0",
+  "description": "Aplicação completa de gerenciamento de hamburgueria",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm install --workspace=backend && npm install --workspace=frontend",
+    "backend": "npm start --workspace=backend",
+    "frontend": "npm start --workspace=frontend",
+    "dev": "npm run backend & npm run frontend",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend"
+  },
+  "keywords": [
+    "hamburgueria",
+    "restaurante",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT"
+}
