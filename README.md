@@ -120,36 +120,7 @@ O sistema usa JWT para autenticação:
 vercel --prod
 ```
 
-### Frontend
-Conecte o repositório ao Vercel pela interface de dashboard.
 
-### Variáveis de Ambiente
-Configure no painel do Vercel:
-- `DATABASE_URL`: URL de conexão PostgreSQL
-- `JWT_SECRET`: Chave secreta
-- `NODE_ENV`: production
+## 👥 Autor
 
-## 📝 Contribuindo
-
-1. Crie uma branch para sua feature
-```bash
-git checkout -b feature/nova-funcionalidade
-```
-
-2. Commit suas mudanças
-```bash
-git commit -m 'Adiciona nova funcionalidade'
-```
-
-3. Push para a branch
-```bash
-git push origin feature/nova-funcionalidade
-```
-
-## 📄 Licença
-
-MIT
-
-## 👥 Autores
-
-Seu Nome / Seu Email
+Warner de Melo Filho / warner.melo.wm@gmail.com
